@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Double Click</title>
+</head>
+<body>
+    <button id="show">Show</button>
+    <button class="hide">Hide</button>
+    <button class="toggle">Toggle</button>
+    <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem dicta cumque velit quia libero voluptatum, reiciendis esse harum doloribus neque explicabo quae labore animi accusantium nesciunt nisi ut minima incidunt natus assumenda? Nemo enim eligendi corrupti amet quas ab blanditiis ad laborum vero ex neque, quam quae aliquid, excepturi iste veniam dolorem ullam dicta sunt. Non quo animi modi aspernatur sit a quis, dolorem est nulla qui. Veniam vitae, voluptatum id explicabo ad provident eveniet maiores ratione dolorum possimus repellendus molestias asperiores error dolore est cupiditate, facere ullam! Culpa earum odit reiciendis? Unde harum, inventore nemo ab, accusamus magni hic, sint ea eaque sit dolor tenetur quam rerum? Nostrum ea distinctio aut provident soluta repellat, illo officia explicabo magnam voluptatum ad, aliquam et quis, minima fugit incidunt! Odio accusantium hic natus error nihil laborum modi optio tempore eaque delectus, explicabo nemo voluptatibus culpa perspiciatis labore ducimus distinctio aspernatur aliquam cum suscipit cumque obcaecati? Iure explicabo excepturi culpa eveniet quam itaque exercitationem soluta hic, reprehenderit ex architecto nisi labore magnam laudantium magni repellendus corporis. Rem quaerat sapiente magnam sunt omnis! Aliquid maiores velit corrupti vel, assumenda, pariatur nemo quae blanditiis culpa rerum eos odit nostrum, quibusdam saepe. Velit, quaerat consectetur?</div>
+
+    <script>
+        $(document).ready(()=>{
+            $('.hide').dblclick(()=>{
+                $('.para').hide(2000)
+            })
+
+            $('#show').dblclick(()=>{
+                $('.para').show(2000)
+            })
+
+            $('.toggle').dblclick(()=>{
+                $('.para').toggle(2000)
+            })
+        })
+    </script>
+    
+</body>
+</html>

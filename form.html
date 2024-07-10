@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- 
+        form -> to get data from user
+             -> u can cust data as pr your need using js
+
+        action -> backend api call
+        onsubmit -> js calling
+        name    -> indetity
+        method  -> get(insecure) / post(secure)
+     -->
+     <h2>Form element</h2>
+     <form>
+        <label>User Name : </label>
+        <input />
+        <!-- 
+            type -> text / password / number / email / tel / date / time / month / week / color / range / checkbox / radio / submit
+            name  -> backend fetch
+            id     -> js fetch
+            placeholder -> watermark
+            value   -> by default value
+            max     -> maximum value
+            min     -> minimum value
+            minlength   -> minimum number of character
+            maxlength   -> maximum number of character
+            readonly    -> u cant change the value but that value will be store in db
+            disable     -> u cant change the value also that value will not be store in db
+            required    -> compulsory
+         -->
+         <input type="text" />
+         <input type="email" />
+         <input type="url" />
+         <input type="number" min="1" max="15" />
+         <input type="tel" maxlength="10" minlength="10" />
+         <input type="search" />
+         <br><br>
+         <input type="month" />
+         <input type="week" />
+         <input type="date" min="2024-02-10"  />
+         <input type="time" />
+         <input type="datetime-local" />
+         <br><br>
+         <input type="file" />
+         <input type="color" />
+         <input type="range" />
+         <br><br>
+         <textarea rows="10" cols="100" ></textarea>
+         <select name="" id="">
+            <option name="ahmd">Ahmedabad</option>
+            <option>Surat</option>
+            <option>Mumbai</option>
+         </select>
+         <label>Gender</label>
+         <input type="radio" name="Gender"  />Male
+         <input type="radio" name="Gender"  />Female
+         <input type="radio" name="Gender"  />Other
+         <br><br>
+         <label>Hobbies</label>
+         <input type="checkbox" name="hobbies"  />Reading
+         <input type="checkbox" name="hobbies"  /> TRavelling
+         <input type="checkbox" name="hobbies"  /> Dancing
+         <br><br>
+         <input type="submit" value="CONTINUE" />
+         <input type="reset" />
+
+
+     </form>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+
+    <script>
+        let passw="hewufijdkuire!#&@R48129ew8A";
+
+        document.write(passw.match('r')+'<br/>')
+        document.write(passw.match(/r/g)+'<br/>')
+        document.write(passw.match(/[A-Z]/g)+'<br/>')
+        document.write(passw.match(/[a-z]/g)+'<br/>')
+        document.write(passw.match(/[0-9]/g)+'<br/>')
+        document.write(passw.match(/[@-z]/g)+'<br/>')
+
+
+        let uppercondition= passw.match(/[A-Z]/g)
+        let lowercondition= passw.match(/[a-z]/g)
+        let digitcondition= passw.match(/[0-9]/g)
+        let specialcondition = passw.match(/[!-.:-@[-`{-~]/g)
+
+        document.write(`${uppercondition} <br/> ${lowercondition} <br/>  ${specialcondition} <br/> ${digitcondition} <br/>`)
+
+        if(passw.length<8 | uppercondition==null | lowercondition==null | digitcondition==null | specialcondition==null){
+            document.write("Password is Invalid")
+        }
+        else{
+            document.write("Password is Valid")
+        }
+
+        document.write('-----------------------------------<br/><br/>');
+        // if there is not string then it give u -1
+        var email = 'Grras@gmail.com'
+        document.write(email.search('@'))
+        var preemail=email[email.search('@')-1];
+        var afteremail=email[email.search('@')+1];
+        var nostruct=(email.search('@')==-1);
+
+        document.write(preemail+ ' ' + afteremail + ' ' + nostruct + '<br/>')
+        
+        if(nostruct==true | preemail==undefined | afteremail==undefined){
+            document.write('Email is Invalid')
+        }
+        else{
+            document.write('Email is Valid')
+        }
+
+        // email validation -> @ pre & @ after -> string
+    </script>
+</body>
+</html>

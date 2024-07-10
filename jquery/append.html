@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Append</title>
+</head>
+<body>
+    <button>click to add</button>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>     
+    </ul>
+    
+    <script>
+            $(document).ready(()=>{
+                $('button').click(()=>{
+                    var value = prompt("Enter your data : ")
+                    $('ul').append(`<li>${value}</li>`);
+                })
+            })
+    </script>
+</body>
+</html>

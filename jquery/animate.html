@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Animate</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{overflow: hidden;}
+        .box{
+            height: 300px;
+            width: 100%;
+            background-color: green;
+            position: absolute;
+        }
+        .box1{
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+            position: absolute;
+            left: 100%;
+        }
+        .box2{
+            height: 300px;
+            width: 100%;
+            background-color: pink;
+            position: absolute;
+            left: 100%;   
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="btnfirst">click to start animation</button>
+    </div>
+    <div class="box1">
+        <button class="btnsecond">slid</button>
+    </div>
+    <div class="box2">
+        <button class="btnthird">slid</button>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            $('.btnfirst').click(()=>{
+                $('.box').animate({left:"-100%"})
+                $('.box1').animate({left:'0%'})
+            });
+
+            $('.btnsecond').click(()=>{
+                $('.box1').animate({left:"-100%"})
+                $('.box2').animate({left:'0%'})
+            })
+
+            $('.btnthird').click(()=>{
+                $('.box2').animate({left:"100%"})
+                $('.box1').animate({left:"100%"})
+                $('.box').animate({left:"0%"})
+            })
+        })
+    </script>
+</body>
+</html>

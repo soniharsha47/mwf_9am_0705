@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return valid()">
+        <input type="text" id="uname" />
+        <span id="uerr"></span>
+        <input type="number" id="num" />
+        <span id="unum"></span>
+        <input type="password" id="passw" />
+        <input type="submit" value="send" />
+    </form>
+
+    <script>
+        function valid(){
+            // console.log('done');
+            // stop -> to stop process use return false;
+            let data= document.forms['myform']['uname'].value;
+            let passw = document.forms['myform']['passw'].value;
+            let val = document.forms['myform']['num'].value;
+            console.log(data + ' ' + passw)
+
+            if(data==''){
+                document.getElementById('uerr').innerHTML='please enter username';
+                document.getElementById('uname').style.borderColor='red';
+                return false;
+            }
+            else if(data.length<2){
+                document.getElementById('uerr').innerHTML='username should be more than 2 characters';
+                document.getElementById('uname').style.borderColor='red';
+                return false;
+            }
+            else if(val<5){
+                document.getElementById('unum').innerHTML='number should be more than 5';
+                return false;
+            }
+
+            // return false;
+        }
+    </script>
+</body>
+</html>

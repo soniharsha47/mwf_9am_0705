@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+        *{margin: 0;background-color: rgb(48, 202, 202);color: white;font-size: 19px;}
+        .head{
+            background-color: teal;
+            text-align: center;
+            padding: 1%;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            border-bottom: 1px solid teal;
+        }
+        li{padding: 1%;}
+        a{text-decoration: none;}
+        .main{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .about-us{
+            text-align: justify;
+            text-align-last: center;
+            margin-top: 3%;
+            line-height: 2;
+        }
+        .cate{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cate1, .cate2, .cate3{
+            background-color: teal;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;            
+        }
+        .fo{
+            text-align: right;
+            background-color: teal;
+            padding: 1%;
+        }
+
+        /* Tablet Query -> width -> min : 768px | max : 1300px */
+        @media (max-width:1300px) {
+            .head{
+                font-size: 20px;
+            }
+        }
+
+        /* Mobile -> min :300px | max : 768px */
+        @media (max-width:768px){
+            *{
+                font-size: 13px;
+            }
+            .head{
+                font-size: 15px;
+            }
+            ul{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="head">Grras Solution Pvt. Ltd. </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Career</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="about-us">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus a explicabo soluta, quasi sequi neque vero veritatis ut dolorem sapiente voluptatum temporibus officiis id eum. Numquam vero voluptatibus explicabo facilis accusamus ad, quas consequuntur neque. Molestias dolorum quasi minus sed laborum nam asperiores explicabo et, officia porro repudiandae repellat deserunt fugit similique incidunt, impedit maiores provident doloremque, voluptatem quisquam inventore dolor eligendi amet! Dolores doloremque fuga magnam nisi, et reiciendis assumenda voluptate odit quos illo qui reprehenderit ab repellat a deleniti possimus alias illum quae omnis hic maxime earum consequatur modi repellendus. Quaerat, corporis? Ut soluta perferendis enim quod doloremque itaque, eos nihil numquam praesentium architecto voluptas, pariatur animi error cumque nemo officia tempore. Temporibus laborum doloribus dolores fuga delectus repudiandae. Voluptas provident nihil nulla cupiditate repudiandae, libero unde mollitia debitis ullam, voluptates eligendi, sit ipsum nemo maxime vero qui. Nemo corrupti deserunt fuga voluptatum id numquam, animi aut repellendus.</div>
+        <div class="cate">
+            <div class="cate1"></div>
+            <div class="cate2"></div>
+            <div class="cate3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="fo">All rights are preserved by Grras Solution</div>
+    </footer>
+</body>
+</html>

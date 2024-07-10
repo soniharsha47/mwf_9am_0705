@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+        }
+
+        .box::before{
+            content: "before :: ";
+            background-color: bisque;
+            display: block;
+            /* height: 100px; */
+            width: 100px;
+            border-radius: 100%;
+            padding: 2%;
+        }
+
+        
+        .box::after{
+            content: " :: After";
+            background-color: pink;
+            display: block;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            padding: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click </title>
+</head>
+<body>
+
+    <button
+        onclick="tohidepara()"
+    >click with btn to hide para</button>
+    <h2>click with h2</h2>
+
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At officiis, adipisci molestias maiores, sint illo fugit aspernatur recusandae accusantium quibusdam atque dicta pariatur qui ullam ducimus consequatur quidem ab deserunt eius nesciunt! Explicabo nulla eaque minima officiis sunt culpa quis omnis adipisci rem dolor, ab qui, ratione id quae ipsa alias suscipit consequuntur vitae commodi vero necessitatibus odit. Ratione sapiente quae numquam assumenda libero quasi incidunt ipsa eius a totam fugiat quia harum eligendi iusto, nemo obcaecati tempore aut inventore quibusdam vitae facere optio repudiandae. Modi soluta atque assumenda ratione ab in praesentium sed placeat sunt quas nostrum neque, esse corrupti quis dolorem architecto quasi delectus officiis molestiae accusantium quod! Aspernatur deleniti molestias qui ullam, quia, dolorem corporis sunt praesentium reprehenderit perspiciatis vitae! Nulla quasi distinctio beatae repellendus modi magni quas odio aut qui laudantium. Atque non, asperiores similique neque voluptate cum. Labore deserunt provident similique dolorem perferendis. Aliquid, obcaecati harum! Quibusdam placeat impedit saepe nam veritatis quas numquam, aperiam inventore non officiis hic magnam praesentium eaque modi eveniet, voluptate mollitia et. Nostrum vel quae iusto reprehenderit est quidem, dignissimos veniam voluptatem laudantium sapiente odio itaque et, vitae alias eos ipsum quo aperiam, rem ipsa fugiat? Cupiditate ratione distinctio iste!</p>
+        <br><br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio beatae veritatis dicta praesentium cum iusto asperiores iure harum aut maiores laborum eius cupiditate veniam, similique modi impedit ratione animi unde tempore tempora. Nostrum esse voluptas accusamus vel pariatur autem, blanditiis explicabo ipsam repudiandae quidem adipisci saepe maxime laborum atque reprehenderit earum sint laudantium provident animi veritatis officia iure tempora repellat. Nisi dignissimos, sit corporis quo illo dolor nihil odio a, earum exercitationem asperiores maxime maiores nulla voluptatum beatae quis omnis quod et saepe aut eos dolore commodi! Nemo, praesentium aut! Neque corporis quasi consequatur veritatis excepturi harum totam similique amet!</p>
+
+    <script>
+        var uname='grras'
+        function tohidepara(){
+            document.getElementById('para').style.visibility='visible'
+            document.getElementById('para').style.position='static'
+            document.getElementById('para').innerHTML=`
+                <h1>hello Mr/Miss ${uname}
+                    <br/> How are you ?
+                    </h1>`
+        }
+    </script>
+</body>
+</html>

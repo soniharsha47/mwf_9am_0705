@@ -1,0 +1,30 @@
+>> What is HTML ?
+    .. Hyper Text   : it redirect u on another page -> plain / hyper
+    .. Markup       : h2, p, b -> design
+    .. Language     : the way you choose to communicate
+
+>> tags/fragment -> <>  -> <p> <div>
+>> element -> p, div, address, etc
+
+>> How to create web page ?
+    .. filename.html
+     ..> shift + !
+        <!DOCTYPE html>
+            <html lang="en"> -- lang(Language) = en(english)
+                <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -- css
+                        <title>Document</title>
+                                ... css ...
+                                ... fav icon ...
+                </head>
+                <body>
+                    html + js
+                </body>
+            </html>
+
+>> root element -> html
+
+>> Inline & block 
+        -- block - it contains 100% width - div/p/address etc
+        -- inline - it contains width as pr content - b,i,img

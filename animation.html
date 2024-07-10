@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 100px;
+            background-color: gray;
+            /* animation calling */
+            animation-name: ani1;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            animation-direction:alternate ;
+        }
+
+        @keyframes ani1 {
+            0%{
+                width: 0;
+                background-color: white;
+            }
+            10%{
+                width: 20%;
+                background-color: red;
+            }
+            30%{
+                width: 100%;
+                background-color: gray;
+            }
+            70%{
+                width: 80%;
+                background-color: brown;
+            }
+            100%{
+                width: 10%;
+                background-color: black;
+            }
+        }
+
+        /* Animation define */
+        @keyframes anii  {
+            from{
+                /* start point */
+                width: 0%;
+                background-color: white;
+            }
+            to{
+                /* end point */
+                width: 100%;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
